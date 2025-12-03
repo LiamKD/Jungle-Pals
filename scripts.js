@@ -107,7 +107,7 @@ $(function () {
 document.addEventListener('DOMContentLoaded', () => {
   const checkboxes = document.querySelectorAll('input[name="readiness"]');
   const readyBtn = document.getElementById('ready-button');
-  const speciesBox = document.getElementById('Species-Location'); 
+  const speciesBox = document.getElementById('Species-Location');
   const searchBtn = document.getElementById('search-adopt');
 
   if (!checkboxes.length || !readyBtn || !speciesBox || !searchBtn) return;
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.querySelector('#contactform form');
 
-  contactForm.addEventListener('submit', function(event) {
+  contactForm.addEventListener('submit', function (event) {
     event.preventDefault();
     alert('Your query has been sent!');
     contactForm.reset();
@@ -190,15 +190,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // The hover effect for contact info boxes
-$(document).ready(function() {
+$(document).ready(function () {
   $('.mb-4').hover(
-    function() {
+    function () {
       $(this).css({
         'transform': 'scale(1.05)',
         'box-shadow': '0 10px 20px rgba(0,0,0,0.3)'
       });
     },
-    function() {
+    function () {
       $(this).css({
         'transform': 'scale(1)',
         'box-shadow': '0 4px 10px rgba(0,0,0,0.2)'
@@ -207,7 +207,7 @@ $(document).ready(function() {
   );
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   const $checkboxes = $('input[name="readiness"]');
   const $readyBtn = $('#ready-button');
   const $speciesBox = $('#Species-Location');
@@ -223,23 +223,23 @@ $(document).ready(function() {
   $noResults.hide();
 
   // Allow the ready button only when all the checkboxes are checked
-  $checkboxes.on('change', function() {
+  $checkboxes.on('change', function () {
     const allChecked = $checkboxes.length === $checkboxes.filter(':checked').length;
     $readyBtn.prop('disabled', !allChecked);
   });
 
-  $readyBtn.on('click', function() {
+  $readyBtn.on('click', function () {
     $speciesBox.slideDown();
     $('html, body').animate({ scrollTop: $speciesBox.offset().top }, 600);
   });
 
   // Filter adoption cards on search
-  $searchBtn.on('click', function() {
+  $searchBtn.on('click', function () {
     const selectedSpecies = $speciesSelect.val();
     const selectedLocation = $locationSelect.val();
     let anyShown = false;
 
-    $adoptDivs.each(function() {
+    $adoptDivs.each(function () {
       const $this = $(this);
       const matches = $this.data('species') === selectedSpecies && $this.data('location') === selectedLocation;
       $this.toggle(matches);
@@ -255,15 +255,14 @@ $(document).ready(function() {
   });
 });
 
-
-  $('nav a').hover(
-    function() {
-      $(this).css({'color': '#ff7f50', 'transition': 'color 0.3s ease'});
-    },
-    function() {
-      $(this).css({'color': '', 'transition': 'color 0.3s ease'});
-    }
-  );
+$('nav a').hover(
+  function () {
+    $(this).css({ 'color': '#ff7f50', 'transition': 'color 0.3s ease' });
+  },
+  function () {
+    $(this).css({ 'color': '', 'transition': 'color 0.3s ease' });
+  }
+);
 ;
 // ===== Featured Animals Carousel (Index) =====
 document.addEventListener("DOMContentLoaded", () => {
@@ -327,3 +326,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// ===== Scroll Reveal on Sections =====
+document.addEventListener("DOMContentLoaded", () => {
+  const reveals = document.querySelectorAll(".reveal");
+
+  if (!reveals.length) return;
+
+  const revealOnScroll = () => {
+    const triggerPoint = window.innerHeight - 80;
+
+    reveals.forEach((el) => {
+      const top = el.getBoundingClientRect().top;
+      if (top < triggerPoint) {
+        el.classList.add("show");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll(); // run once on load
+});
