@@ -155,7 +155,7 @@
     margin: 0.8rem 0 0.3rem;
   }
 
-  /* Responsive*/
+  /* Responsive image*/
   @media (max-width: 768px) {
     header {
       flex-direction: column;
@@ -252,16 +252,23 @@
     background-color: #3b2e1a;
   }
 
-  @media (max-width: 768px) {
-    .slide img {
-      height: 250px;
-    }
-
-    .caption {
-      font-size: 0.9rem;
-      padding: 0.5rem;
-    }
+@media (max-width: 768px) {
+  .slides {
+    height: 250px;   /* match the image height */
   }
+
+  .slide img {
+    height: 250px;
+  }
+
+  .caption {
+    bottom: 12px;    /* bring caption up a bit */
+    width: 92%;      /* avoid edge clipping */
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+}
+
 
   /* Newsletter Styling*/
 
