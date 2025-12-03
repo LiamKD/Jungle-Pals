@@ -15,24 +15,26 @@
   <header>
     <div class="logo">
       <a href="index.html">
-        <img src="images/JunglePalsMainLogo.png" alt="Jungle Pals Logo">
+        <img src="images/JunglePalsMainLogo.webp" alt="Jungle Pals Logo">
       </a>
     </div>
     <!--Navigation Bar-->
     <nav>
       <a href="adopt.html">
-        <img src="images/nav-heart.png" alt="Heart" class="nav-icon"> Adopt </a>
+        <img src="images/nav-heart.webp" alt="Heart" class="nav-icon"> Adopt </a>
       <a href="about.html">
-        <img src="images/nav-paw.png" alt="Paw" class="nav-icon"> Our Work </a>
+        <img src="images/nav-paw.webp" alt="Paw" class="nav-icon"> Our Work </a>
       <a href="help.html">
-        <img src="images/nav-hands.png" alt="Hands" class="nav-icon"> How You Can Help </a>
+        <img src="images/nav-hands.webp" alt="Hands" class="nav-icon"> How You Can Help </a>
       <a href="stories.html">
-        <img src="images/nav-book.png" alt="Book" class="nav-icon"> Adoption Stories </a>
+        <img src="images/nav-book.webp" alt="Book" class="nav-icon"> Adoption Stories </a>
       <a href="contact.html">
-        <img src="images/nav-chat.png" alt="Chat" class="nav-icon"> Contact Us </a>
+        <img src="images/nav-chat.webp" alt="Chat" class="nav-icon"> Contact Us </a>
     </nav>
     <!--Donate Button-->
-    <button class="donate-btn">Donate</button>
+    <a href="https://paypal.me/" target="_blank" rel="noopener">
+      <button class="donate-btn">Donate</button>
+    </a>
   </header>
 
   <!-- Featured Animals Section -->
@@ -47,9 +49,9 @@
         </div>
       </div>
       <div class="slide">
-        <img src="images/fox.jpg" alt="Fox">
+        <img src="images/zebra.jpg" alt="Fox">
         <div class="caption">
-          <h3>Frank the Fox</h3>
+          <h3>Ziggy The Zebra</h3>
           <p>Clever, curious, and mischievously charming.</p>
         </div>
       </div>
@@ -70,161 +72,193 @@
     </div>
   </section>
 
+  <section class="adopt-section reveal">
 
-  <!-- Adopt Section -->
-  <section class="adopt-section">
-    <h2>Adopt from JunglePals</h2>
-    <p>
-      We are delighted that you are thinking of adopting a pet from Jungle Pals!
-      The shelter is <strong>CLOSED on Mondays</strong> except for scheduled appointments.
-      Normal visitor hours are <strong>Tuesday – Sunday from 12pm – 4pm</strong>.
-    </p>
-    <p>You do not need an appointment to visit.</p>
-    <a href="adopt.html" class="view-all-btn">View All Animals</a>
+    <!-- Adopt Section -->
+    <section class="adopt-section">
+      <h2>Adopt from JunglePals</h2>
+      <p>
+        We are delighted that you are thinking of adopting a pet from Jungle Pals!
+        The shelter is <strong>CLOSED on Mondays</strong> except for scheduled appointments.
+        Normal visitor hours are <strong>Tuesday – Sunday from 12pm – 4pm</strong>.
+      </p>
+      <p>You do not need an appointment to visit.</p>
+      <a href="adopt.html" class="view-all-btn">View All Animals</a>
+    </section>
   </section>
-
-  <!-- New Arrivals grid-->
-  <section class="new-arrivals">
-    <h2>New Arrivals</h2>
-    <div class="animal-grid">
-      <a href="adopt.html" class="animal-card-link">
-        <div class="animal-card">
-          <img src="images/hedgehog.jpg" alt="Hedgey">
-          <h3>Hedgey</h3>
-        </div>
-      </a>
-      <a href="adopt.html" class="animal-card-link">
-        <div class="animal-card">
-          <img src="images/spider.jpg" alt="Larry">
-          <h3>Larry</h3>
-        </div>
-      </a>
-      <a href="adopt.html" class="animal-card-link">
-        <div class="animal-card">
-          <img src="images/parrot.jpg" alt="Charlie">
-          <h3>Charlie</h3>
-        </div>
-      </a>
-      <a href="adopt.html" class="animal-card-link">
-        <div class="animal-card">
-          <img src="images/gecko.jpg" alt="Anto">
-          <h3>Anto</h3>
-        </div>
-      </a>
-    </div>
+  <section class="new-arrivals reveal">
+    <!-- New Arrivals grid-->
+    <section class="new-arrivals">
+      <h2>New Arrivals</h2>
+      <div class="animal-grid">
+        <a href="adopt.html" class="animal-card-link">
+          <div class="animal-card">
+            <img src="images/hedgehog.jpg" alt="Hedgey">
+            <h3>Hedgey</h3>
+          </div>
+        </a>
+        <a href="adopt.html" class="animal-card-link">
+          <div class="animal-card">
+            <img src="images/spider.jpg" alt="Larry">
+            <h3>Larry</h3>
+          </div>
+        </a>
+        <a href="adopt.html" class="animal-card-link">
+          <div class="animal-card">
+            <img src="images/parrot.jpg" alt="Charlie">
+            <h3>Charlie</h3>
+          </div>
+        </a>
+        <a href="adopt.html" class="animal-card-link">
+          <div class="animal-card">
+            <img src="images/gecko.jpg" alt="Anto">
+            <h3>Anto</h3>
+          </div>
+        </a>
+      </div>
+    </section>
   </section>
-  <!--Latest News-->
-  <section class="latest-news">
-    <h2>JunglePals News</h2>
-    <div class="news-grid">
-      <article class="news-card">
-        <a href="news-post-1.html" class="news-link">
-          <figure class="news-media">
-            <img src="images/saved-raccoon.jpg" alt="Raccoon">
-          </figure>
-          <time class="news-date" datetime="2025-11-10">10th of November 2025</time>
-          <h3 class="news-title">Local Man Heroically Rescues Raccoon</h3>
-          <p class="news-excerpt">Trash Panda Grateful, Immediately Steals His Lunch</p>
-          <span class="news-more">Read more</span>
-        </a>
-      </article>
-      <article class="news-card">
-        <a href="news-post-2.html" class="news-link">
-          <figure class="news-media">
-            <img src="images/saved-wolf.jpg" alt="Wolf">
-          </figure>
-          <time class="news-date" datetime="2025-11-05">5th of November 2025</time>
-          <h3 class="news-title">Brave Woman Adopts Wolf</h3>
-          <p class="news-excerpt">Neighbors Say ‘Dog Seems a Bit Intense</p>
-          <span class="news-more">Read more</span>
-        </a>
-      </article>
-      <article class="news-card">
-        <a href="news-post-3.html" class="news-link">
-          <figure class="news-media">
-            <img src="images/saved-monkey.jpg" alt="Monkey">
-          </figure>
-          <time class="news-date" datetime="2025-10-30">30th of October 2025</time>
-          <h3 class="news-title">Tamarin Monkey Escapes Dublin Zoo</h3>
-          <p class="news-excerpt">Chaos in the capital today as a tamarin monkey made a daring escape from Dublin Zoo.
-          </p>
-          <span class="news-more">Read more</span>
-        </a>
-      </article>
-    </div>
-  </section>
-
-  <!-- Featured Animals Carousel -->
-<section class="featured-section">
-  <div class="featured-header">
-    <h2>Featured Jungle Pals</h2>
-    <p>Meet a few of our current favourites who are ready for their forever homes.</p>
-  </div>
-
-  <div class="featured-carousel" id="featuredCarousel">
-    <button class="featured-nav prev" aria-label="Previous featured animals">
-      &#10094;
-    </button>
-
-    <div class="featured-track-wrapper">
-      <div class="featured-track" id="featuredTrack">
-        <!-- Slide 1 -->
-        <article class="featured-slide">
-          <div class="animal-card">
-            <img src="images/lemur.jpg" alt="Rescued lemur named Kito">
-            <div class="animal-info">
-              <h3>Kito</h3>
-              <p>Friendly ring-tailed lemur who loves climbing and cuddles.</p>
-              <a class="btn adopt-btn" href="adopt.html">Adopt Kito</a>
-            </div>
-          </div>
+  <section class="latest-news reveal">
+    <!--Latest News-->
+    <section class="latest-news">
+      <h2>JunglePals News</h2>
+      <div class="news-grid">
+        <article class="news-card">
+          <a href="stories.html" class="news-link">
+            <figure class="news-media">
+              <img src="images/saved-raccoon.jpg" alt="Raccoon">
+            </figure>
+            <time class="news-date" datetime="2025-11-10">10th of November 2025</time>
+            <h3 class="news-title">Local Man Heroically Rescues Raccoon</h3>
+            <p class="news-excerpt">Trash Panda Grateful, Immediately Steals His Lunch</p>
+            <span class="news-more">Read more</span>
+          </a>
         </article>
-
-        <!-- Slide 2 -->
-        <article class="featured-slide">
-          <div class="animal-card">
-            <img src="images/parrot1.jpg" alt="Parrot named Luna">
-            <div class="animal-info">
-              <h3>Luna</h3>
-              <p>Chatty parrot with a big personality and gentle nature.</p>
-              <a class="btn adopt-btn" href="adopt.html">Adopt Luna</a>
-            </div>
-          </div>
+        <article class="news-card">
+          <a href="stories.html" class="news-link">
+            <figure class="news-media">
+              <img src="images/saved-wolf.jpg" alt="Wolf">
+            </figure>
+            <time class="news-date" datetime="2025-11-05">5th of November 2025</time>
+            <h3 class="news-title">Brave Woman Adopts Wolf</h3>
+            <p class="news-excerpt">Neighbors Say ‘Dog Seems a Bit Intense</p>
+            <span class="news-more">Read more</span>
+          </a>
         </article>
-
-        <!-- Slide 3 -->
-        <article class="featured-slide">
-          <div class="animal-card">
-            <img src="images/sloth1.jpg" alt="Sloth named Momo">
-            <div class="animal-info">
-              <h3>Momo</h3>
-              <p>Calm little sloth who enjoys slow mornings and leafy snacks.</p>
-              <a class="btn adopt-btn" href="adopt.html">Adopt Momo</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Slide 4 -->
-        <article class="featured-slide">
-          <div class="animal-card">
-            <img src="images/capuchin.jpg" alt="Capuchin monkey named Zuri">
-            <div class="animal-info">
-              <h3>Zuri</h3>
-              <p>Playful capuchin who’s curious and great with enrichment toys.</p>
-              <a class="btn adopt-btn" href="adopt.html">Adopt Zuri</a>
-            </div>
-          </div>
+        <article class="news-card">
+          <a href="stories.html" class="news-link">
+            <figure class="news-media">
+              <img src="images/saved-monkey.jpg" alt="Monkey">
+            </figure>
+            <time class="news-date" datetime="2025-10-30">30th of October 2025</time>
+            <h3 class="news-title">Tamarin Monkey Escapes Dublin Zoo</h3>
+            <p class="news-excerpt">Chaos in the capital today as a tamarin monkey made a daring escape from Dublin Zoo.
+            </p>
+            <span class="news-more">Read more</span>
+          </a>
         </article>
       </div>
-    </div>
+    </section>
+  </section>
+  <section class="rescue-video reveal">
+    <!-- Rescue Video Section -->
+    <section class="rescue-video">
+      <div class="rescue-video-grid">
 
-    <button class="featured-nav next" aria-label="Next featured animals">
-      &#10095;
-    </button>
-  </div>
+        <!-- YouTube Video -->
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Zz_2HoFwlA0?si=DPzDw3vI9zod3j_M"
+            title="YouTube video player" frameborder="0" allow="accelerometer; 
+      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!-- Description -->
+        <div class="video-text">
+          <h2>See Our Rescues in Action</h2>
+          <p>
+            Every Jungle Pal has a story. From emergency rescue to rehabilitation and
+            finally adoption, our team works around the clock to give animals a safe
+            second chance.
+          </p>
+        </div>
 
-  <div class="featured-dots" id="featuredDots" aria-label="Featured carousel pagination"></div>
-</section>
+      </div>
+    </section>
+  </section>
+
+  <section class="featured-section reveal">
+    <!-- Featured Animals Carousel -->
+    <section class="featured-section">
+      <div class="featured-header">
+        <h2>Featured Jungle Pals</h2>
+        <p>Meet a few of our current favourites who are ready for their forever homes.</p>
+      </div>
+
+      <div class="featured-carousel" id="featuredCarousel">
+        <button class="featured-nav prev" aria-label="Previous featured animals">
+          &#10094;
+        </button>
+
+        <div class="featured-track-wrapper">
+          <div class="featured-track" id="featuredTrack">
+            <!-- Slide 1 -->
+            <article class="featured-slide">
+              <div class="animal-card">
+                <img src="images/lemur.jpg" alt="Rescued lemur named Kito">
+                <div class="animal-info">
+                  <h3>Kito</h3>
+                  <p>Friendly ring-tailed lemur who loves climbing and cuddles.</p>
+                  <a class="btn adopt-btn" href="adopt.html">Adopt Kito</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="featured-slide">
+              <div class="animal-card">
+                <img src="images/parrot1.jpg" alt="Parrot named Luna">
+                <div class="animal-info">
+                  <h3>Luna</h3>
+                  <p>Chatty parrot with a big personality and gentle nature.</p>
+                  <a class="btn adopt-btn" href="adopt.html">Adopt Luna</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 3 -->
+            <article class="featured-slide">
+              <div class="animal-card">
+                <img src="images/sloth1.jpg" alt="Sloth named Momo">
+                <div class="animal-info">
+                  <h3>Momo</h3>
+                  <p>Calm little sloth who enjoys slow mornings and leafy snacks.</p>
+                  <a class="btn adopt-btn" href="adopt.html">Adopt Momo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 4 -->
+            <article class="featured-slide">
+              <div class="animal-card">
+                <img src="images/capuchin.jpg" alt="Capuchin monkey named Zuri">
+                <div class="animal-info">
+                  <h3>Zuri</h3>
+                  <p>Playful capuchin who’s curious and great with enrichment toys.</p>
+                  <a class="btn adopt-btn" href="adopt.html">Adopt Zuri</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <button class="featured-nav next" aria-label="Next featured animals">
+          &#10095;
+        </button>
+      </div>
+
+      <div class="featured-dots" id="featuredDots" aria-label="Featured carousel pagination"></div>
+    </section>
+  </section>
 
 
   <!--Newsletter-->
@@ -249,7 +283,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <img src="images/croc-2-clear-bg.png" alt="Jungle Pals Croc" class="footer-logo">
+        <img src="images/croc-2-clear-bg.webp" alt="Jungle Pals Croc" class="footer-logo" loading="lazy">
         <p class="tagline">
           Jungle Pals works to share the wonder of animals and inspire care for wildlife everywhere.
         </p>
