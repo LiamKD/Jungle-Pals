@@ -1781,24 +1781,5 @@
 
   }
 
-@media (max-width: 480px) {
-  .stories-hero,
-  .help-hero {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
 
-  .stories-hero h1,
-  .help-hero h1 {
-    /* a bit smaller outline to avoid clipping */
-    text-shadow:
-      -1px -1px 0 #ffffff,
-       1px -1px 0 #ffffff,
-      -1px  1px 0 #ffffff,
-       1px  1px 0 #ffffff,
-      -1px  0   0 #ffffff,
-       1px  0   0 #ffffff,
-       0   -1px 0 #ffffff,
-       0    1px 0 #ffffff;
-  }
-}
+
