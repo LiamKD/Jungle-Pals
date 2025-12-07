@@ -1781,3 +1781,33 @@
 
   }
 
+/*--*/
+@media (max-width: 480px) {
+
+  .hero-banner.help-hero,
+  .hero-banner.stories-hero {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+
+    /* hard-center all hero content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .help-hero p,
+  .stories-hero p {
+    display: block !important;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    box-sizing: border-box;
+  }
+}
+
+
