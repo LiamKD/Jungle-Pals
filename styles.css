@@ -1780,13 +1780,4 @@
     text-align: center;
 
   }
-@media (max-width: 480px) {
-  .stories-hero,
-  .help-hero {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-
 
