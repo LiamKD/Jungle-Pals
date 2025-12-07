@@ -1780,32 +1780,13 @@
     text-align: center;
 
   }
-
-.hero-banner,
-.help-hero,
-.stories-hero {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;   /* hard-center children */
-  text-align: center;
+@media (max-width: 480px) {
+  .stories-hero,
+  .help-hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
-/* ensure headings & text don't inherit odd margins */
-.hero-banner h1,
-.hero-banner p {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* override inline-block paragraphs */
-.help-hero p,
-.stories-hero p {
-  display: block;        /* instead of inline-block */
-  width: 100%;
-  max-width: 700px;      /* keep your readable line length */
-  padding-left: 1.2rem;  /* lighter symmetric padding */
-  padding-right: 1.2rem;
-}
 
 
