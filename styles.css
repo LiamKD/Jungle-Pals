@@ -557,11 +557,6 @@
   {
     transform: translateY(-3px);
   }
-  #backTop:focus,
-  #backTop:active 
-  {
-  color: #fff;
-  }
   /* Adoption FAQ's accordion*/
   .accordion-button 
   {
@@ -1829,6 +1824,7 @@
     box-sizing: border-box;
   }
 }
+
 
 
 
